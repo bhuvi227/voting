@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+
+    <div class="voting-container" style="display:none;">
+        <h2>Vote for Your Favorite Option</h2>
+        <form id="votingForm">
+            <label><input type="radio" name="vote" value="Option 1"> red </label><br>
+            <label><input type="radio" name="vote" value="Option 2"> blue </label><br>
+            <label><input type="radio" name="vote" value="Option 3"> green </label><br>
+            <label><input type="radio" name="vote" value="Option 4"> white </label><br>
+            <label><input type="radio" name="vote" value="Option 5"> yellow </label><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
